@@ -1,2 +1,16 @@
 Flask
 pytest
+
+
+
+# View the running Pods
+kubectl get pods
+
+# View the deployment status
+kubectl get deployments
+
+# View the exposed service details and access ports
+kubectl get service temp-converter-service
+
+# Stream logs from a specific pod to verify Flask is running
+kubectl logs -l app=temp-converter
