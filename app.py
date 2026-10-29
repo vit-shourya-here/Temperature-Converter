@@ -38,7 +38,6 @@ def home():
             temp = float(request.form.get("val1", 0))
             action = request.form["action"]
 
-            # Push 1: Celsius to Fahrenheit
             if action == "c_to_f":
                 converted = (temp * 9 / 5) + 32
                 result = f"{temp}°C = {converted:.2f}°F"
