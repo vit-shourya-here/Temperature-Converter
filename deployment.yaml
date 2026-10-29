@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
         - name: web-app
-          # REPLACE 'YOUR_DOCKERHUB_USERNAME' with your actual username
-          image: YOUR_DOCKERHUB_USERNAME/web-app:latest
+          image: shanhdplus/web-app:latest
           ports:
             - containerPort: 5000
